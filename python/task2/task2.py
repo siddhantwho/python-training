@@ -64,13 +64,50 @@ def chooseOp():
 """
 
 def arithmetic():
-    
+    a = 10
+    b = 20
+    c = 30
 
+    avg = (a + b + c)/3
+    print (f'avg = {avg}')
 
+    if ((avg > a) and (avg > b) and (avg > c)):
+        print ('avg is higher than a, b, c.')
+    else:
+        if ((avg > a) and (avg > b)):
+            print ('avg is higher than a, b.')
+        elif ((avg > a) and (avg > c)):
+            print ('avg is higher than a, c.')
+        elif ((avg > b) and (avg > c)):
+            print ('avg is higher than b, c')
+        elif (avg > a):
+            print ('avg is just higher than a.')
+        elif (avg <= a):
+            if (avg > b):
+                print ('avg is just higher than b.')
+            elif (avg > c):
+                print ('avg is just higher than c.') 
 
-    
+def positiveLoop():
+    while (1 == 1):
+        x = eval(input('Enter a number: '))
+        if (x >= 0):
+            print ('Good Going')
+            continue
+        else:
+            print ('It\'s over')
+            break
+
+def findMultiples(num1 = 7, num2 = 5):
+    range_min = 2000
+    range_max = 3200
+
+    for i in range()
+
 
 if __name__ == "__main__":
-    chooseOp()
+
+    positiveLoop()
+
     
 
