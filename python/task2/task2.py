@@ -3,12 +3,12 @@
 """
 def divBy3Or5(number):
 
-    if ((number % 3 == 0) and (not number % 5 == 0)):
-        print ('Consultadd')
-    elif ((not number % 3 == 0) and (number % 5 == 0)):
-        print ('Python Training')
-    elif ((number % 3 == 0) and (number % 5 == 0)):
+    if ((number % 3 == 0) and (number % 5 == 0)):
         print ('Consultadd - Python Training')
+    elif (number % 3 == 0):
+        print ('Consultadd')
+    elif (number % 5 == 0):
+        print ('Python Training')
 
 """
 2. Write a program in Python to perform the following operator based task:
@@ -237,7 +237,7 @@ def fiveTries2(luck):
 
 if __name__ == "__main__":
 
-    fiveTries2(21)
+    pass
 
     
 
