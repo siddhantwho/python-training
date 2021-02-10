@@ -56,8 +56,8 @@ final output.
 """
 
 print ('Please enter two numbers between 1-10\n')
-number1 = eval(input('Please enter the first number: '))
-number2 = eval(input('Please enter the second number: '))
+number1 = float(input('Please enter the first number: '))
+number2 = float(input('Please enter the second number: '))
 z = number1 + number2
 result = z + 30
 print (result)

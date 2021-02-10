@@ -25,7 +25,7 @@ def chooseOp():
 
         Your choice: 
         """
-    choice = eval(input(message))
+    choice = int(input(message))
     if ((choice!=5) and (choice in choices)):
         print ('You will have to choose 2 numbers!')
         num1 = float(input('Enter the first number: '))
@@ -94,7 +94,7 @@ def arithmetic():
 
 def positiveLoop():
     while (1 == 1):
-        x = eval(input('Enter a number: '))
+        x = float(input('Enter a number: '))
         if (x >= 0):
             print ('Good Going')
             continue
@@ -173,7 +173,7 @@ number
 """
 
 def luckyNumber(luck):
-    number = eval(input('Guess the lucky number: '))
+    number = int(input('Guess the lucky number: '))
     if (number == luck):
         print ('Congratulations')
     else:
@@ -198,7 +198,7 @@ After the fifth guess it stops and prints “Game over!”.
 def fiveTries(luck):
     counter = 1
     while (counter <= 5):
-        guess = eval(input(f'Type in guess number {counter}: \n'))
+        guess = int(input(f'Type in guess number {counter}: \n'))
         if (guess == luck):
             print ('Good guess!')
         elif (counter < 5):
@@ -217,7 +217,7 @@ def fiveTries2(luck):
     correct = False
     counter = 1
     while (counter <= 5):
-        guess = eval(input(f'Type in guess number {counter}: \n'))
+        guess = int(input(f'Type in guess number {counter}: \n'))
         if (guess == luck):
             print ('Good guess!')
             correct = True
