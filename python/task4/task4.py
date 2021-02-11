@@ -109,7 +109,7 @@ Hints: Use filter() to filter even elements of the given listUse map() to genera
 numbers in the filtered list. Use lambda() to define anonymous functions.
 """
 
-def evenSquares(someList = [1,2,3,4,5,6,7,8,9,10]):
+def evenSquares(someList = list(range(1,11))):
     evenList = list(filter(lambda x: x % 2 == 0, someList))
     evenSquareList = list(map(lambda y: y**2, evenList))
     return evenSquareList
@@ -126,7 +126,7 @@ def divByZero():
 """
 13. Flatten the list [1,2,3,4,5,6,7] into 1234567 using reduce().
 """
-def reducer(inputList = [1,2,3,4,5,6,7]):
+def reducer(inputList = list(range(1,8))):
     someList = [0]
     someList.extend(inputList)
     flatList = reduce(lambda x,y: x + y*10**(len(someList)-1-someList.index(y)),someList)
@@ -174,5 +174,5 @@ def arrayProduct(arr):
 
 
 if __name__ == "__main__":
-    k = foo()
-    print(k)
+    x = range(1,20)
+    print (list(x))
