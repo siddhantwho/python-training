@@ -1,6 +1,8 @@
 """
 1. Create a list of given structure and get the Access list as provided below:
 """
+
+
 x=[100,200,300,400,500,[1,2,3,4,5,[10,20,30,40,50],6,7,8,9],600,700,800]
 al1 = x[5][0:4]
 
@@ -63,14 +65,66 @@ def evenStrings(hello = 'Hello my name is abcde'):
 7. Write a program in python to print the pair of numbers whose sum is equal to the result
 number that is let's say 8.
 """
-def findSum(x = [1,2,3,4,5,6,7,8,9,-1], num = 8):
-    complements = list(map(lambda x: 8 - x, x))
-    for i in x:
-        if i in complements and x.index(i) != complements.index(8 - i):
-            print (i, 8 - i)
-    print (complements)
+def findPairs(x = [1,2,3,4,5,6,7,8,9,-1], num = 8):
+    used = []
+    for i in range(len(x)):
+        if ((num - x[i]) in x[i+1:]):
+            print (x[i], num - x[i])
+
+"""
+8. Write a program in Python to complete the following task:
+> Create two lists such as even_list and odd_list
+> Ask user to enter a number in the range of 1,50 and make sure if the entered number is
+even, append it to the even_list and if the entered number is odd append it to the odd_list.
+> Keep that in mind you can only add 5 items in each list
+> Make sure once you enter all the 5 elements, calculate the sum of the list and return the
+maximum of the list.
+"""
+
+def listMaker():
+    evenList = []
+    oddList = []
+    
+    while len(evenList) < 5 and len(oddList) < 5: 
+        newNum = int(input('Please enter a number in the range 1 - 50\n'))
+        if newNum % 2 == 0:
+            evenList.append(newNum)
+        else:
+            oddList.append(newNum)
+    finalList = evenList if len(evenList) > len(oddList) else oddList
+
+    return (f'The sum of the list is {sum(finalList)} and the max is {max(finalList)}')
+
+"""
+9. Write a program to find out the occurrence of a specific character from an alphanumeric string.
+Sample input: 12abcbacbaba344ab
+Expected output: a=5 b=5 c=2
+NOTE: Make sure to avoid counting the occurrence of numeric values in the string.
+"""
+
+def countChar(somestr):
+    alphaList = []
+    for i in somestr:
+        if i.isalpha():
+            alphaList.append(i)
+    alphaSet = set(alphaList)
+    for i in alphaSet:
+        print (f'{i} = {alphaList.count(i)}')
+
+"""
+10. Generate and print another tuple whose values are even numbers in the given tuple
+(1,2,3,4,5,6,7,8,9,10).
+"""
+
+    
+def returnEven(someTup = (1,2,3,4,5,6,7,8,9,10)):
+    evenList = []
+    for i in someTup:
+        if i % 2 == 0:
+            evenList.append(i)
+    return (tuple(evenList))
 
             
 if __name__ == "__main__":
-    findSum()
+    pass
 
