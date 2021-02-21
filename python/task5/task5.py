@@ -7,7 +7,7 @@ HINT: Use SyntaxError
 def syntaxCheck():
     try:
         if True:
-            x = 1
+            x = 1'
     except SyntaxError:
         print ('Check your code')
 
