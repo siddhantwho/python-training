@@ -7,16 +7,16 @@ HINT: Use SyntaxError
 def syntaxCheck():
     try:
         if True:
-            x = 1'
+            x = eval(input('Type your syntactically incorrect input here: \n'))
     except SyntaxError:
-        print ('Check your code')
+        print ('Check your input!')
 
 """
 2. Write a program in Python to allow the user to open a file by using the argv module. If the
 entered name is incorrect throw an exception and ask them to enter the name again. Make sure
 to use read only mode.
 """
-def arfvOpen():
+def argvOpen():
     if (argv[1]) != 'hello.txt':
         raise Exception('There\'s no such file!')
     else:
@@ -72,8 +72,7 @@ def evenReader():
 
 
 if __name__ == "__main__":
-    print(evenReader())
-
+    pass
 
     
 
