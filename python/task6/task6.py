@@ -23,10 +23,33 @@ def makeDict(somekeys,somevals):
 4. Write a program in Python using generators to reverse the string.
 Input String = “Consultadd Training”
 """
+def reverser(some_string):
+    n = len(some_string)
+    for i in range(n-1,-1,-1):
+        yield some_string[i]
 
+# to print the letters of the reversed string in a sequence
+for i in reverser('batman'):
+    print (i)
 
+# to generate a new string in the reversed order
+newstr = ''
+for i in reverser('batman'):
+    newstr = newstr + i
+
+"""
+5. Write an example on decorators.
+"""
+def decorator(some_function):
+    def wrapper():
+        print('This is what my function does: \n')
+        #does whatever the function some_function would do
+        some_function()
+    return wrapper
+
+@decorator
+def greeter():
+    print ('Hello world')
 
 if __name__ == "__main__":
-    students = ['Smit', 'Jaya', 'Rayyan']
-    subjects = ['CSE', 'Networking', 'Operating System']
-    makeDict(students,subjects)
+    greeter()
