@@ -6,11 +6,14 @@ C is 50.
 H is 30.
 D is a variable whose values should be input to your program in a comma-separated sequence.
 """
-def Q(*D):
-    C = 50
-    H = 30
-    for i in D:
-        print ((2*C*i/H))
+class Q:
+    def __init__(self):
+        self.C = 50
+        self.H = 30
+    
+    def result(self, D):
+        for i in D:
+            print ((2*self.C*i/self.H))
 
 """
 2. Define a class named Shape and its subclass Square. The Square class has an init function which
@@ -106,4 +109,4 @@ class Person:
 
 
 if __name__ == "__main__":
-    Q(1,2,3)
+    pass
