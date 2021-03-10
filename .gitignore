@@ -2,3 +2,6 @@
 *.o
 *.jar
 libraries/
+
+django\project-1\p1\
+django/project-1/p1
