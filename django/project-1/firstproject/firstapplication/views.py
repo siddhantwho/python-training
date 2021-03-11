@@ -7,3 +7,6 @@ def hello(request):
 
 def bye(request):
     return HttpResponse("Bye world!")
+
+def view1(request):
+    return render(request,"page1.html")

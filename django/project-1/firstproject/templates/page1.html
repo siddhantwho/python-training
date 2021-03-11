@@ -4,7 +4,8 @@
 
 <head>
     <title> Hello World Page! </title>
-    <link rel="stylesheet" href="style1.css">
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'style1.css'%}" type="text/css">
 </head>
 <body>
     <div class = "words">
