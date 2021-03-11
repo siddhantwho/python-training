@@ -1,0 +1,18 @@
+body {
+    display: grid;
+    justify-content: center;
+    border: solid black;
+}
+
+.image {
+    border: solid blue;
+    max-width: 400px;
+    max-height: 600px;
+
+}
+
+.words {
+    border: solid red;
+    color: pink;
+
+}
