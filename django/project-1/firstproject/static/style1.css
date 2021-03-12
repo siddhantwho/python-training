@@ -1,7 +1,15 @@
+body {
+  display: grid;
+  grid-template-rows: 50px 50px 230px;
+  justify-content: center;
+  justify-items: center;
+}
 
-  .box {
-    background-color: beige;
-    color: red;
-    border-radius: 5px;
-    border: 2px dodgerblue solid;
-  }
+.words h1{
+  font-family: Arial;
+  color: midnightblue;
+}
+
+.i {
+  border:midnightblue 5px solid;
+}

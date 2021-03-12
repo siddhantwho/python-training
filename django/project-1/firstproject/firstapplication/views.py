@@ -8,5 +8,5 @@ def hello(request):
 def bye(request):
     return HttpResponse("Bye world!")
 
-def view1(request):
+def welcome(request):
     return render(request,"page1.html")
