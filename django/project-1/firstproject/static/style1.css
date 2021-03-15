@@ -1,6 +1,6 @@
 body {
   display: grid;
-  grid-template-rows: 50px 50px 230px;
+  grid-template-rows: 50px 50px 230px 1fr;
   justify-content: center;
   justify-items: center;
 }
@@ -12,4 +12,9 @@ body {
 
 .i {
   border:midnightblue 5px solid;
+}
+
+.forms {
+  border: hotpink 3px solid;
+  font-family: serif;
 }

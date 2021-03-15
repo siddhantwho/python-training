@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Login Page </title>
+    {%load static%}
+    <link rel="stylesheet" href="{%static 'style2.css'%}" type="text/css">
+  
+<body>
+    <h1> An Example Login Form</h1>
+    <br>
+
+    <form action="welcome">
+        {{form.as_p}} <!-- Form as a paragraph -->
+        <input type=submit value="login" />
+    </form>
+
+</body>
+
+</html>

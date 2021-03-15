@@ -1,0 +1,11 @@
+body {
+    font-family: Arial;
+    color: blueviolet;
+    border: solid black;
+    display: grid;
+    justify-content: center;
+}
+
+form {
+    border: solid darkblue;
+}
