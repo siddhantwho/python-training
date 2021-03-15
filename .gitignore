@@ -3,4 +3,4 @@
 *.jar
 libraries/
 django/project-1/p1
-django/crudproject/crud_env
+django/project-crud/cpenv
