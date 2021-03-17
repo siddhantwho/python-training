@@ -1,0 +1,27 @@
+body {
+    display: block;
+    background-color: lightblue;
+    padding: 5px;
+    margin: 5px;
+}
+
+.blog {
+    font-family: Arial;
+    font-size: 20px;
+    border: black 2px solid;
+    box-shadow: 5px;
+
+}
+
+.blog h2 {
+
+    color: midnightblue;
+    font-weight: bold;
+
+}
+
+.blog h4 {
+    color: black;
+    font-style: italic;
+    justify-self: left;
+}

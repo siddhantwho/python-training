@@ -9,8 +9,13 @@ class BlogForm(ModelForm):
         model = Blog
         fields = ['title','author','time','post']
 
-def blog_list(request, template_name='blogapp/list.html'):
-    pass
+def blog_list(request, template_name='list.html'):
+    blog = Blog.objects.all()
+    data = {}
+    data['object_list'] = blog
+    
+    return render(request, template_name, data)
+
 
 
  
