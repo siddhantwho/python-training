@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'blogform.css'%}" type="text/css">
+</head>
+
+<body>
+    <div class="blog">
+        <form method="POST">
+            {% csrf_token %}
+            <div class="title">
+                {{form.title.label_tag}}
+                <br>
+                {{form.title}}
+            </div>
+            <div class="info">
+                {{form.author.label_tag}}
+                <br>
+                {{form.author}}
+                <br>
+                {{form.time.label_tag}}
+                <br>
+                {{form.time}}
+
+            </div>
+            <div class="post">
+                {{form.post.label_tag}}
+                <br>
+                {{form.post}}
+            </div>
+            <input type="submit" value="CREATE" />
+        </form>
+    </div>
+</body>
+
+</html>

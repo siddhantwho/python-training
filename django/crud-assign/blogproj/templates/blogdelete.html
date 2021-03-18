@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'blogdelete.css'%}" type="text/css">
+</head>
+
+<body>
+    <div class="question">
+        <h3> Are you sure you want to delete? </h3>
+    </div>
+    
+    <div class="blog">
+        
+
+        <h2> {{ object.title }}</h1>
+
+
+        <div class="info">
+            <h4> {{ object.author }} </h4>
+            <h5> Read: {{ object.time }} mins</h5>
+        </div>
+
+
+    </div>
+    <div class="buttons">
+
+        <a href="{% url "blog_list" %}">
+            <img src="{% static 'back.png' %}"id="back">
+        </a>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit">
+                <img src="{% static 'delete.png' %}">
+            </button>
+        </form>
+    </div>
+    
+
+</body>
+
+</html>

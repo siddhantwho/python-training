@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    background-color: lightblue;
+
+    flex-flow: column wrap;
+    align-content: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.blog {
+    display: grid;
+    width: 500px;
+    align-content: center;
+    justify-items: center;
+    background-color: beige;
+    font-family: Arial;
+    border: black 2px solid;
+    grid: 1 fr 2 fr 5 fr / 1 fr 1 fr 1 fr;
+
+}
+
+.title {
+    display: block;
+    grid-area: 1 / 1 / 2 / span 2;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.info{
+    display: block;
+    grid-area: 2 / 1 / 4 / span 2;
+    font-weight: bolder;
+    padding-bottom: 10px;
+}
+
+
+.post {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    grid-row-start: 3;
+    padding-bottom: 20px;
+    margin-top: 10px;
+
+ 
+}
+
