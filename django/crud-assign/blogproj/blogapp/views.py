@@ -16,6 +16,11 @@ def blog_list(request, template_name='list.html'):
     
     return render(request, template_name, data)
 
+def blog_view(request, pk, template_name='blogpost.html'):
+    blog = get_object_or_404(Blog, pk=pk)
+    return render(request, template_name, {'object': blog})
+
+
 
 
  

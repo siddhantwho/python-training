@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{%static 'blogpost.css'%}" type="text/css">
+</head>
+
+<body>
+    <div class="blog">
+        <div class="title">
+            <h1> {{object.title}} </h1>
+        </div>
+
+        <div class="info">
+            <h3> {{ object.author }} </h3>
+            <h4> Read: {{ object.time }} mins</h4>
+        </div>
+        <div class="post">
+            {{ object.post }}
+        </div>
+    </div>
+</body>
+
+</html>
